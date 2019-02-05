@@ -14,3 +14,8 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+window.addEventListener('popstate', function (e) {
+    window.location.reload();
+    console.log("Reload!");
+});
